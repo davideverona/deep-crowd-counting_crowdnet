@@ -1,0 +1,14 @@
+net: "models/dcc_crowdnet/train_val.prototxt"
+test_iter: 100
+test_interval: 1000
+base_lr: 0.0000001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 100000
+display: 100
+max_iter: 450000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "models/dcc_crowdnet/dcc_crowdnet_train"
+solver_mode: GPU
